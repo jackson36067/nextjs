@@ -1,16 +1,26 @@
-import { LensDemo } from "./lensDemo";
-import { MarqueeDemo } from "./marqueeDemo";
-import { MeteorsDemo } from "./meteorDemo";
+// import { MarqueeDemo } from "./marqueeDemo";
+// import { OrbitingCirclesDemo } from "@/components/OrbitingCirclesDemo";
+// import { IconCloudDemo } from "@/components/IconCloudDemo";
+import PayDemo from "@/components/pay";
+// import { Label } from "@/components/ui/label";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center w-full">
-      <div className="w-full">
-        <MarqueeDemo />
-      </div>
-      <div className="flex justify-between items-center w-full pl-10 pr-10 box-border leading-tight rounded-xl bg-pink-500">
-        <LensDemo />
-        <MeteorsDemo />
+    // sidebarInset is a flex container with a header and a main content area.
+    <div className="flex flex-1 p-4 pt-0">
+      {/* <div className="grid auto-rows-min gap-4 md:grid-cols-3">
+          <div className="flex justify-center aspect-video rounded-xl bg-muted/50">
+            <MarqueeDemo />
+          </div>
+          <div className="aspect-video rounded-xl bg-muted/50">
+            <OrbitingCirclesDemo />
+          </div>
+          <div className="aspect-video rounded-xl bg-muted/50">
+            <IconCloudDemo />
+          </div>
+        </div> */}
+      <div className="min-h-[100vh] size-full flex-1 rounded-xl bg-muted/90 md:min-h-min">
+        <PayDemo />
       </div>
     </div>
   );
